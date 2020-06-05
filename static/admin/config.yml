@@ -1,8 +1,9 @@
 backend:
   name: test-repo
+  git: https://github.com/greenlightjohnny/project3
 
-media_folder: static/blog
-public_folder: assets/blog
+media_folder: static/assets
+public_folder: assets
 
 collections:
   - label: "Pages"
@@ -11,7 +12,7 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "landingpage/top.yml"
+        file: "content/blog/landingpage/middle.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
