@@ -1,18 +1,31 @@
 backend:
   name: github
-  git: https://github.com/greenlightjohnny/project3
+  repo: greenlightjohnny/project3
 
 media_folder: static/assets
 public_folder: assets
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Main Page"
+    name: "Main Page"
 
     files:
-      - label: "About Page"
-        name: "about"
-        file: "content/testpage.md"
+      - label: "Section One"
+        name: "Section One"
+        file: "content/pages/main/sectiontwo.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image }
+      - label: "Section two"
+        name: "Section two"
+        file: "content/pages/main/sectiontwo.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
