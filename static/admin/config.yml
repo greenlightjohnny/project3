@@ -12,23 +12,17 @@ collections:
     files:
       - label: "Section One"
         name: "Section One"
+        file: "content/pages/main/sectionone.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+
+      - label: "Section Two"
+        name: "Section Two"
         file: "content/pages/main/sectiontwo.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Position, name: position, widget: string }
-              - { label: Photo, name: photo, widget: image }
-      - label: "Section two"
-        name: "Section two"
-        file: "content/pages/main/sectiontwo.md"
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
           - label: Team
             name: team
             widget: list

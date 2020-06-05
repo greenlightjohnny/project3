@@ -12,7 +12,7 @@ const Mytest = ({ data }) => {
 
 export const getdata = graphql`
   query MyQuery {
-    markdownRemark(fileAbsolutePath: { regex: "/pagetop1/" }) {
+    markdownRemark(fileAbsolutePath: { regex: "/sectionone.md/" }) {
       frontmatter {
         title
       }
