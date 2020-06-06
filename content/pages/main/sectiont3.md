@@ -1,9 +1,6 @@
 ---
 title: Section Three
-intro: |-
-  Section Three
-
-  1. **Section Three**
+intro: "3"
 description: 3
 ---
 > ###### [water](www.google.com)
