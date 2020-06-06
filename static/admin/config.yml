@@ -28,7 +28,7 @@ collections:
 
       - label: "Section Three"
         name: "Section Three"
-        file: "content/pages/main/sectiont3.md"
+        file: "content/pages/main/section3.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: number }
