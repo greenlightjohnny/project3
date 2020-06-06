@@ -9,6 +9,7 @@ html {
   //display: inline-block;
   align-items: flex-start;
   flex: 1 1 auto;
+  background-color: red;
   //flex-direction: row;
   //flex-grow: 1;
 }
@@ -287,6 +288,7 @@ html {
   .inner {
     max-width: 1300px;
     margin: 0 auto;
+    text-align: center;
     h1 {
       font-family: "montserrat";
       margin-left: 1rem;

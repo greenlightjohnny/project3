@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className={Styles.outer}>
       <div className={Styles.container}>
-        <h3>
+        <h3 className="blue">
           <Link to="/">
             HER2.<span className={Styles.me}>ME</span>
           </Link>
