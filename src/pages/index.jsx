@@ -154,14 +154,13 @@ export const query = graphql`
   {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/main/" } }
-      sort: { fields: [fields___intro], order: DESC }
+      sort: { order: ASC, fields: frontmatter___date }
     ) {
       edges {
         node {
           html
           frontmatter {
             title
-            intro
           }
         }
       }
