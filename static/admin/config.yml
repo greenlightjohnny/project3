@@ -58,3 +58,43 @@ collections:
           - { label: Intro, name: intro, widget: string }
           - { label: Body, name: body, widget: markdown }
           - { label: Date, name: date, widget: datetime }
+
+  - label: "Traditional Page"
+    name: "Traditional Page"
+
+    files:
+      - label: "Section One"
+        name: "Section One"
+        file: "content/pages/traditional/traditional1.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Two"
+        name: "Section Two"
+        file: "content/pages/traditional/traditional2.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Three"
+        name: "Section Three"
+        file: "content/pages/traditional/traditional3.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Four"
+        name: "Section Four"
+        file: "content/pages/traditional/traditional4.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
