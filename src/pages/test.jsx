@@ -13,7 +13,7 @@ class Mytest extends React.Component {
     //const title = data.allMarkdownRemark.edges
     //const html = data.allMarkdownRemark.edges
     const siteTitle = "her2"
-    console.log(data.edges[1].node.frontmatter.title)
+    console.log(data.edges[0].node.frontmatter.intro)
     return (
       <div>
         <Layout>
@@ -24,9 +24,10 @@ class Mytest extends React.Component {
               </h1>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: data.edges[2].node.html,
+                  __html: data.edges[0].node.html,
                 }}
               ></div>
+              <div>{data.edges[1].node.frontmatter.intro}</div>
 
               <Link className={Styles.button1} to="/basics">
                 Basics{" "}
@@ -57,10 +58,10 @@ class Mytest extends React.Component {
                 <img src={SciPhoto}></img>
               </div>
               <div>
-                <h1>{data.edges[0].node.frontmatter.title}</h1>
+                <h1>{data.edges[1].node.frontmatter.title}</h1>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: data.edges[0].node.html,
+                    __html: data.edges[1].node.html,
                   }}
                 ></div>
                 <Link className={Styles.button1} to="/traditional">
@@ -87,10 +88,10 @@ class Mytest extends React.Component {
           <div className={Styles.sect3}>
             <div className={Styles.flex3}>
               <div>
-                <h1>{data.edges[1].node.frontmatter.title}</h1>
+                <h1>{data.edges[2].node.frontmatter.title}</h1>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: data.edges[1].node.html,
+                    __html: data.edges[2].node.html,
                   }}
                 ></div>
                 <Link className={Styles.button1} to="/alternative">

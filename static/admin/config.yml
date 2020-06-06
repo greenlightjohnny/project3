@@ -12,21 +12,21 @@ collections:
     files:
       - label: "Section One"
         name: "Section One"
-        file: "content/pages/main/sectionone.md"
+        file: "content/pages/main/section1.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
 
       - label: "Section Two"
         name: "Section Two"
-        file: "content/pages/main/sectiontwo.md"
+        file: "content/pages/main/section2.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
 
       - label: "Section Three"
         name: "Section Three"
-        file: "content/pages/main/sectionthree.md"
+        file: "content/pages/main/sectiont3.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
