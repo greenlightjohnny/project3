@@ -16,6 +16,7 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
 
       - label: "Section Two"
         name: "Section Two"
@@ -23,6 +24,7 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
 
       - label: "Section Three"
         name: "Section Three"
@@ -30,3 +32,4 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
+          - { label: Body, name: body, widget: markdown }

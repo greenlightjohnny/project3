@@ -12,8 +12,9 @@ class Mytest extends React.Component {
     const data = this.props.data.allMarkdownRemark
     //const title = data.allMarkdownRemark.edges
     //const html = data.allMarkdownRemark.edges
+
     const siteTitle = "her2"
-    console.log(data.edges[0].node.frontmatter.intro)
+    console.log(data.edges[0].node.html)
     return (
       <div>
         <Layout>
@@ -91,7 +92,7 @@ class Mytest extends React.Component {
                 <h1>{data.edges[2].node.frontmatter.title}</h1>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: data.edges[2].node.html,
+                    __html: data.edges[1].node.frontmatter.intro,
                   }}
                 ></div>
                 <Link className={Styles.button1} to="/alternative">
