@@ -1,6 +1,6 @@
 ---
 title: This is the main title
-intro: Filling in
+intro: "1"
 description: 1
 ---
 Lorem lorem lorem lorem lorem lorem
