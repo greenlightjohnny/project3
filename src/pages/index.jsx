@@ -154,18 +154,16 @@ class Mytest extends React.Component {
 export const query = graphql`
   {
     allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { regex: "/main/" }
-        frontmatter: { intro: {}, title: {} }
-      }
+      filter: { fileAbsolutePath: { regex: "/main/" } }
+      sort: { order: ASC, fields: frontmatter___intro }
     ) {
       edges {
         node {
+          html
           frontmatter {
             title
             intro
           }
-          html
         }
       }
     }
