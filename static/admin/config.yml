@@ -36,3 +36,25 @@ collections:
           - { label: Intro, name: intro, widget: string }
           - { label: Body, name: body, widget: markdown }
           - { label: Date, name: date, widget: datetime }
+
+  - label: "Basics Page"
+    name: "Basics Page"
+
+    files:
+      - label: "Section One"
+        name: "Section One"
+        file: "content/pages/basics/basics1.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Two"
+        name: "Section Two"
+        file: "content/pages/basics/basics2.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
