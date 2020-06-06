@@ -154,7 +154,7 @@ export const query = graphql`
   {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/main/" } }
-      sort: { order: ASC, fields: frontmatter___intro }
+      sort: { fields: [fields___intro], order: DESC }
     ) {
       edges {
         node {

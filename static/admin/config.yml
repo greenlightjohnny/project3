@@ -15,7 +15,7 @@ collections:
         file: "content/pages/main/section1.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: number }
+          - { label: Intro, name: intro, widget: string }
           - { label: Body, name: body, widget: markdown }
 
       - label: "Section Two"
@@ -23,7 +23,7 @@ collections:
         file: "content/pages/main/section2.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: number }
+          - { label: Intro, name: intro, widget: string }
           - { label: Body, name: body, widget: markdown }
 
       - label: "Section Three"
@@ -31,5 +31,5 @@ collections:
         file: "content/pages/main/section3.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: number }
+          - { label: Intro, name: intro, widget: string }
           - { label: Body, name: body, widget: markdown }
