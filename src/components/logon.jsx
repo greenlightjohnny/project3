@@ -18,10 +18,27 @@ const Logon = ({ children }) => {
   const isLoggedIn = identity && identity.isLoggedIn
   return (
     <>
-      <nav style={{ background: "green" }}>
+      <nav
+        style={{
+          background: "blue",
+          borderRadius: `10px`,
+          width: `150px`,
+          margin: `0 auto`,
+        }}
+      >
         {" "}
         Login Status:
-        <button className="btn" onClick={() => setDialog(true)}>
+        <button
+          style={{
+            marginBottom: `10px`,
+            borderRadius: `10px`,
+            background: `#ffffff`,
+            border: `none`,
+            fontWeight: `bold`,
+          }}
+          className="btn"
+          onClick={() => setDialog(true)}
+        >
           {isLoggedIn ? `Hello ${name}, Log out here!` : "LOG IN"}
         </button>
       </nav>

@@ -115,7 +115,7 @@ class Layout extends React.Component {
                 HER2.<span className={Sect.me}>ME</span>
               </Link>
             </div>
-            <Logon />
+
             <div>
               <Link
                 activeClassName={Sect.active}
@@ -168,6 +168,7 @@ class Layout extends React.Component {
             <p>Happily created using: </p>
             <img className={Sect.footerlogo} src={Logo}></img>
           </div>
+          <Logon />
         </footer>
       </div>
     )
