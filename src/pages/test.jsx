@@ -25,10 +25,9 @@ class Mytest extends React.Component {
               </h1>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: data.edges[0].node.html,
+                  __html: data.edges[1].node.html,
                 }}
               ></div>
-              <div>{data.edges[1].node.frontmatter.intro}</div>
 
               <Link className={Styles.button1} to="/basics">
                 Basics{" "}
@@ -59,10 +58,10 @@ class Mytest extends React.Component {
                 <img src={SciPhoto}></img>
               </div>
               <div>
-                <h1>{data.edges[1].node.frontmatter.title}</h1>
+                <h1>{data.edges[0].node.frontmatter.title}</h1>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: data.edges[1].node.html,
+                    __html: data.edges[0].node.html,
                   }}
                 ></div>
                 <Link className={Styles.button1} to="/traditional">
