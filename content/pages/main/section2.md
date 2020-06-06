@@ -1,6 +1,11 @@
 ---
-title: Let's start again
-intro: Water water
+title: "Traditional "
+intro: tewt
 ---
+Lorem lorem lorem lorem lorem lorem lorem
+Lorem lorem lorem lorem lorem lorem lorem
+Lorem lorem lorem lorem lorem lorem lorem
+Lorem lorem lorem lorem lorem lorem lorem
 
-Here is section two
+
+
