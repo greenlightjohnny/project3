@@ -3,10 +3,10 @@ import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import Layout from "../components/layout"
+import Layout from "../components/layout2"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-
+import Navbar from "../components/navbar"
 type Data = {
   site: {
     siteMetadata: {
@@ -36,6 +36,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Navbar />
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
