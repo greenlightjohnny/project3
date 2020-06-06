@@ -1,5 +1,5 @@
 ---
-title: Section Three
+title: Alternative
 intro: "3"
 description: 3
 ---
