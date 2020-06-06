@@ -14,7 +14,7 @@ class Mytest extends React.Component {
     //const html = data.allMarkdownRemark.edges
 
     const siteTitle = "her2"
-    console.log(data.edges[0].node.html)
+    console.log(data)
     return (
       <div>
         <Layout>
@@ -92,7 +92,7 @@ class Mytest extends React.Component {
                 <h1>{data.edges[2].node.frontmatter.title}</h1>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: data.edges[1].node.frontmatter.intro,
+                    __html: data.edges[2].node.html,
                   }}
                 ></div>
                 <Link className={Styles.button1} to="/alternative">
