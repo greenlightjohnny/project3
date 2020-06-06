@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: greenlightjohnny/project3
+  backend: master
 
 media_folder: static/assets
 public_folder: assets
