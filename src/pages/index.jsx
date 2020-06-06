@@ -6,7 +6,7 @@ import SciPhoto from "../images/sci.svg"
 import MedPhoto from "../images/med.svg"
 import Layout from "../components/layout2"
 
-class Mytest extends React.Component {
+export default class Mytest extends React.Component {
   render() {
     const data = this.props.data.allMarkdownRemark
     //const title = data.allMarkdownRemark.edges
@@ -167,8 +167,6 @@ export const query = graphql`
     }
   }
 `
-
-export default Mytest
 
 {
   /* <div className={Styles.landing}>
