@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Navbar from "./navbar"
 import { rhythm, scale } from "../utils/typography"
+import Logon from "./logon"
 
 import Sect from "../pages/test.module.scss"
 import Logo from "../images/gatslogo.svg"
@@ -114,6 +115,7 @@ class Layout extends React.Component {
                 HER2.<span className={Sect.me}>ME</span>
               </Link>
             </div>
+            <Logon />
             <div>
               <Link
                 activeClassName={Sect.active}

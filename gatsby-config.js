@@ -75,6 +75,12 @@ module.exports = {
     },
     `gatsby-plugin-feed`,
     {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://projecther.netlify.app/`, // required!
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Gatsby Starter Blog`,
