@@ -5,9 +5,8 @@ const Mytest = ({ data }) => {
   console.log(title)
   return (
     <div>
+      <h3>{title[0].node.frontmatter.title}</h3>
       <h3>{title[1].node.frontmatter.title}</h3>
-
-      <p>hi</p>
     </div>
   )
 }

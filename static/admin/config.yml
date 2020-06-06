@@ -15,14 +15,14 @@ collections:
         file: "content/pages/main/sectionone.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Body, name: body, widget: markdown }
+          - { label: Intro, name: intro, widget: markdown }
 
       - label: "Section Two"
         name: "Section Two"
         file: "content/pages/main/sectiontwo.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Body, name: body, widget: markdown }
+          - { label: Intro, name: intro, widget: markdown }
           - label: Team
             name: team
             widget: list
