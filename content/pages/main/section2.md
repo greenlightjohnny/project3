@@ -1,6 +1,6 @@
 ---
 title: "Traditional "
-intro: tewt
+intro: "2"
 description: 2
 ---
 Lorem lorem lorem lorem lorem lorem lorem
