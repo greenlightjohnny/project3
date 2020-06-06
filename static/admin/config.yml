@@ -98,3 +98,83 @@ collections:
           - { label: Intro, name: intro, widget: string }
           - { label: Body, name: body, widget: markdown }
           - { label: Date, name: date, widget: datetime }
+
+  - label: "Alternative Page"
+    name: "Alternative Page"
+
+    files:
+      - label: "Section One"
+        name: "Section One"
+        file: "content/pages/alternative/alternative1.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Two"
+        name: "Section Two"
+        file: "content/pages/alternative/alternative2.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Three"
+        name: "Section Three"
+        file: "content/pages/alternative/alternative3.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Four"
+        name: "Section Four"
+        file: "content/pages/alternative/alternative4.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+  - label: "About Page"
+    name: "About Page"
+
+    files:
+      - label: "Section One"
+        name: "Section One"
+        file: "content/pages/about/about1.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Two"
+        name: "Section Two"
+        file: "content/pages/about/about2.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Three"
+        name: "Section Three"
+        file: "content/pages/about/about3.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
+
+      - label: "Section Four"
+        name: "Section Four"
+        file: "content/pages/about/about4.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Date, name: date, widget: datetime }
