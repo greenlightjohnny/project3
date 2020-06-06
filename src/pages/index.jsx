@@ -6,7 +6,6 @@ import SciPhoto from "../images/sci.svg"
 import MedPhoto from "../images/med.svg"
 import Layout from "../components/layout2"
 
-import Navi from "../components/navbar"
 class Mytest extends React.Component {
   render() {
     const data = this.props.data.allMarkdownRemark
@@ -25,7 +24,7 @@ class Mytest extends React.Component {
               </h1>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: data.edges[1].node.html,
+                  __html: data.edges[0].node.html,
                 }}
               ></div>
 
@@ -58,10 +57,10 @@ class Mytest extends React.Component {
                 <img src={SciPhoto}></img>
               </div>
               <div>
-                <h1>{data.edges[0].node.frontmatter.title}</h1>
+                <h1>{data.edges[1].node.frontmatter.title}</h1>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: data.edges[0].node.html,
+                    __html: data.edges[1].node.html,
                   }}
                 ></div>
                 <Link className={Styles.button1} to="/traditional">
