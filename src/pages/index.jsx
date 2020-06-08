@@ -118,7 +118,7 @@ export default class Mytest extends React.Component {
           </div>
           <div className={Styles.sect4}>
             <div className={Styles.inner}>
-              <h1>Latest Posts:</h1>
+              <h1>Latest Blog Posts:</h1>
               <Link className={Styles.button1} to="/alternative">
                 See All{" "}
                 <svg
