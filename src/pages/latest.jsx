@@ -3,4 +3,4 @@ import React from "react"
 const Latest = () => {
   return <div> test</div>
 }
-export default Lastest
+export default Latest

@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.43",
     "@reach/dialog": "^0.10.3",
     "@reach/tabs": "^0.10.3",
     "@reach/visually-hidden": "^0.10.2",

@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `HER2 Cancer`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Anon`,
+      summary: `TBA`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Information on HER2 cancer. Causes, traditional treatments, and alternative treatments.`,
+    siteUrl: `https://www.fredjones.dev/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `TBAnone`,
     },
   },
   plugins: [

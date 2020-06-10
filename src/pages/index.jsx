@@ -5,6 +5,7 @@ import QPhoto from "../images/q.svg"
 import SciPhoto from "../images/sci.svg"
 import MedPhoto from "../images/med.svg"
 import Layout from "../components/layout2"
+import SEO from "../components/seo"
 
 export default class Mytest extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class Mytest extends React.Component {
     return (
       <div>
         <Layout>
+          <SEO title="Home" />
           <div className={Styles.sect1}>
             <div className={Styles.flex1}>
               <h1 className={Styles.htop}>
