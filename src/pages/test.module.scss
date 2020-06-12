@@ -3,6 +3,10 @@ html {
   box-sizing: border-box;
 }
 
+.exx {
+  color: blue;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -145,6 +149,8 @@ html {
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 4rem;
+  //height: 100vh;
   h1 {
     margin-top: 7rem;
   }
@@ -159,6 +165,10 @@ html {
 
   & img {
     margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-top: 0;
   }
 }
 
