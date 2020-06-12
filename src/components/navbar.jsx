@@ -7,6 +7,7 @@ import { useScrollPosition } from "@n8tb1t/use-scroll-position"
 export default () => {
   const [navnames, setNavnames] = useState(false)
   const [hideOnScroll, setHideOnScroll] = useState(true)
+  const [scrollp, setScrollp] = useState(0)
   const rendersCount = useRef(0)
   const [headerStyle, setHeaderStyle] = useState({
     transition: "all 200ms ease-in",
@@ -15,6 +16,7 @@ export default () => {
   useScrollPosition(
     ({ prevPos, currPos }) => {
       const isShow = currPos.y > prevPos.y
+      setScrollp(currPos.y)
       if (isShow !== hideOnScroll) setHideOnScroll(isShow)
     },
     [hideOnScroll],
@@ -24,10 +26,14 @@ export default () => {
   )
 
   const Header = <header style={{ ...headerStyle }} />
-
+  const showtime = hideOnScroll ? Styles.showme : Styles.hideme
+  const bshadow = scrollp === 0 ? "" : Styles.bshadow
   return useMemo(
     () => (
-      <div show={hideOnScroll}>
+      <div
+        show={hideOnScroll}
+        className={`${Styles.outer} ${showtime} ${bshadow}`}
+      >
         <div className={Styles.container}>
           <h3 className="blue">
             <Link to="/">
