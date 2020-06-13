@@ -6,6 +6,7 @@ import SciPhoto from "../images/sci.svg"
 import MedPhoto from "../images/med.svg"
 import Layout from "../components/layout2"
 import SEO from "../components/seo"
+import Latest from "./latest"
 
 export default class Mytest extends React.Component {
   render() {
@@ -118,6 +119,7 @@ export default class Mytest extends React.Component {
               </div>
             </div>
           </div>
+          <Latest />
           <div className={Styles.sect4}>
             <div className={Styles.inner}>
               <h1>Latest Blog Posts:</h1>

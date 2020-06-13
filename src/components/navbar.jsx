@@ -154,33 +154,9 @@ const Navbar = ({ props }) => {
                 </div>
               </li>
               <li>
-                <Link
-                  activeClassName={Styles.active}
-                  className={Styles.darrow}
-                  to="/blogposts"
-                >
-                  Latest{" "}
+                <Link activeClassName={Styles.active} to="/blog">
+                  Blog{" "}
                 </Link>
-                <div className={Styles.drop}>
-                  <Link activeClassName={Styles.active} to="/nope">
-                    link1
-                  </Link>
-                  <Link activeClassName={Styles.active} to="/nope">
-                    link2
-                  </Link>
-                  <Link activeClassName={Styles.active} to="/nope">
-                    link3
-                  </Link>
-                  <Link activeClassName={Styles.active} to="/nope">
-                    link4
-                  </Link>
-                  <Link activeClassName={Styles.active} to="/nope">
-                    link5
-                  </Link>
-                  <Link activeClassName={Styles.active} to="/nope">
-                    link6
-                  </Link>
-                </div>
               </li>
               <li>
                 <Link activeClassName={Styles.active} to="/about">
