@@ -36,7 +36,9 @@ export default function Latest() {
   )
 
   console.log(data.allMdx.edges)
+
   const dat = data.allMdx.edges
+  console.log(dat[2].node.fields.slug)
   return (
     <section className={Styles.main}>
       <div className={Styles.inner}>
