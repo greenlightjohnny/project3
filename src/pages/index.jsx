@@ -120,8 +120,8 @@ export default class Mytest extends React.Component {
               </div>
             </div>
           </div>
-          <Latest />
           <Minee />
+          <Latest />
         </Layout>
       </div>
     )

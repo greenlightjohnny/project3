@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import * as styles from "./mail.module.scss"
+import * as Styles from "./mail.module.scss"
 
 const EmailListForm: React.FunctionComponent<{}> = () => {
   const [email, setEmail] = useState("")
@@ -13,16 +13,18 @@ const EmailListForm: React.FunctionComponent<{}> = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={styles.EmailListForm}>
-      <h2>Subscribe to my email list!</h2>
-      <div className={styles.Wrapper}>
-        <input
-          placeholder="Email address"
-          name="email"
-          type="text"
-          onChange={handleEmailChange}
-        />
-        <button type="submit">Subscribe</button>
+    <form onSubmit={handleSubmit} className={Styles.EmailListForm}>
+      <div className={Styles.con}>
+        <h1>Subscribe for updates</h1>
+        <div className={Styles.Wrapper}>
+          <input
+            placeholder="Email address"
+            name="email"
+            type="text"
+            onChange={handleEmailChange}
+          />
+          <button type="submit">Subscribe</button>
+        </div>
       </div>
     </form>
   )
