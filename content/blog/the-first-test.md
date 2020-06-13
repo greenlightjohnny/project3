@@ -6,6 +6,6 @@ description: Just some minor stuff
 ---
 # Welcome
 
-![Bike pic](assets/cb.jpeg "CB150R from Thailand")
+![Bike pic](../assets/cb2.jpg "CB150R from Thailand")
 
 Let us test this page
