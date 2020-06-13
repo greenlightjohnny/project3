@@ -29,6 +29,7 @@ const Logon = ({ children }) => {
         {" "}
         Login Status:
         <button
+          aria-label="Login"
           style={{
             marginBottom: `10px`,
             borderRadius: `10px`,
@@ -44,6 +45,7 @@ const Logon = ({ children }) => {
       </nav>
       <main>{children}</main>
       <IdentityModal
+        aria-label="Login"
         showDialog={dialog}
         onCloseDialog={() => setDialog(false)}
       />

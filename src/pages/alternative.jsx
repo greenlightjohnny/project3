@@ -8,7 +8,7 @@ const Alternative = ({ data }) => {
   return (
     <Layout>
       <SEO title="Alternative Treatments" />
-      <div className={Styles.mcon}>
+      <div className={`${Styles.mcon} ${Styles.mcontop}`}>
         <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: mydata[0].node.html }}></div>
       </div>

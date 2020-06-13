@@ -1,17 +1,14 @@
-import React, { useState, useRef, useMemo } from "react"
+import React, { useState, useRef, useMemo, useLayoutEffect } from "react"
 import { Link } from "gatsby"
 import Styles from "./navbar.module.scss"
 
 import { useScrollPosition } from "@n8tb1t/use-scroll-position"
 
-export default () => {
+const Navbar = ({ props }) => {
   const [navnames, setNavnames] = useState(false)
   const [hideOnScroll, setHideOnScroll] = useState(true)
   const [scrollp, setScrollp] = useState(0)
   const rendersCount = useRef(0)
-  const [headerStyle, setHeaderStyle] = useState({
-    transition: "all 200ms ease-in",
-  })
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
@@ -25,15 +22,14 @@ export default () => {
     300
   )
 
-  const Header = <header style={{ ...headerStyle }} />
   const showtime = hideOnScroll ? Styles.showme : Styles.hideme
   const bshadow = scrollp === 0 ? "" : Styles.bshadow
+  const ismenuopen = navnames && !hideOnScroll ? Styles.showme : Styles.hideme
+  console.log(showtime)
+  console.log(ismenuopen)
   return useMemo(
     () => (
-      <div
-        show={hideOnScroll}
-        className={`${Styles.outer} ${showtime} ${bshadow}`}
-      >
+      <div className={`${Styles.outer} ${showtime} ${ismenuopen} ${bshadow}`}>
         <div className={Styles.container}>
           <h3 className="blue">
             <Link to="/">
@@ -206,7 +202,9 @@ export default () => {
           </button>
         </div>
       </div>
-    ),
-    [hideOnScroll]
+    )
+    // [hideOnScroll]
   )
 }
+
+export default Navbar
