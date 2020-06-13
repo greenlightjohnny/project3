@@ -91,12 +91,13 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              wrapperStyle: `margin-left: 0`,
             },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: `margin-bottom: 1.0725rem; margin-left: 0`,
             },
           },
           `gatsby-remark-prismjs`,
@@ -117,6 +118,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              wrapperStyle: `margin-left: 0`,
             },
           },
           {
