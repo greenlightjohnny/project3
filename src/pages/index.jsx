@@ -120,34 +120,6 @@ export default class Mytest extends React.Component {
             </div>
           </div>
           <Latest />
-          <div className={Styles.sect4}>
-            <div className={Styles.inner}>
-              <h1>Latest Blog Posts:</h1>
-              <Link className={Styles.button1} to="/alternative">
-                See All{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </Link>
-            </div>
-            <div className={Styles.flex4}>
-              <div>One</div>
-              <div>Two5</div>
-              <div>Three</div>
-              <div>Four</div>
-            </div>
-          </div>
         </Layout>
       </div>
     )

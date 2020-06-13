@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout2"
 import Styles from "./test.module.scss"
 import SEO from "../components/seo"
+import Wmap from "../components/check"
 const Basics = ({ data }) => {
   const mydata = data.allMarkdownRemark.edges
   return (
@@ -16,6 +17,7 @@ const Basics = ({ data }) => {
         <h1>{data.allMarkdownRemark.edges[1].node.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: mydata[1].node.html }}></div>
       </div>
+      <Wmap />
     </Layout>
   )
 }

@@ -27,9 +27,10 @@ const Navbar = ({ props }) => {
   const ismenuopen = navnames && !hideOnScroll ? Styles.showme : Styles.hideme
   console.log(showtime)
   console.log(ismenuopen)
+  // ${showtime} ${ismenuopen} place in the .outer div tag to hide header on scroll.
   return useMemo(
     () => (
-      <div className={`${Styles.outer} ${showtime} ${ismenuopen} ${bshadow}`}>
+      <div className={`${Styles.outer}  ${bshadow}`}>
         <div className={Styles.container}>
           <h3 className="blue">
             <Link to="/">

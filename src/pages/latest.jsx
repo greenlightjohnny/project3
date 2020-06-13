@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Styles from "./latest.module.scss"
 import { rhythm } from "../utils/typography"
+
 export default function Latest() {
   const data = useStaticQuery(
     graphql`
@@ -42,7 +43,7 @@ export default function Latest() {
   return (
     <section className={Styles.main}>
       <div className={Styles.inner}>
-        <h2>Latest Blog Posts:</h2>
+        <h1>Latest Blog Posts:</h1>
         <Link className={Styles.button1} to="/blog">
           See All{" "}
           <svg
@@ -77,7 +78,9 @@ export default function Latest() {
                   {post.node.frontmatter.title}
                 </Link>
               </h3>
-              <small>{post.node.frontmatter.date}</small>
+              <small style={{ color: `#0cf` }}>
+                {post.node.frontmatter.date}
+              </small>
               <p
                 dangerouslySetInnerHTML={{
                   __html: post.node.internal.description || post.node.excerpt,
