@@ -1,8 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Styles from "./blog.module.scss"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
+import Layout from "../components/layout2"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Button from "../components/button"
@@ -16,8 +16,8 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
-        <div style={{ margin: "20px 0 40px" }}>
+        <h1 className={Styles.title}>Latest Blog Posts:</h1>
+        <div className={Styles.blog}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
@@ -37,7 +37,7 @@ class Blog extends React.Component {
                 <small>{node.frontmatter.date}</small>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
+                    __html: node.internal.description || node.excerpt,
                   }}
                 />
               </div>
@@ -61,7 +61,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(
+      sort: { fields: frontmatter___date, order: DESC }
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+    ) {
       edges {
         node {
           excerpt
@@ -69,8 +72,10 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMM DD, YYYY")
             title
+          }
+          internal {
             description
           }
         }

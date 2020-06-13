@@ -1,0 +1,37 @@
+.blog {
+  margin: 0 auto;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  max-width: 1200px;
+
+  > * {
+    //border: 1px solid blue;
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 250px;
+    max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px,
+      rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+    border-radius: 9px;
+  }
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  max-width: 1200px;
+  margin: 6rem auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+}
