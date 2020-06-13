@@ -71,9 +71,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author {
-          name
-        }
+        author
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {

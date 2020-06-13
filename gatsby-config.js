@@ -1,17 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `HER2 Cancer`,
-    author: {
-      name: `Anon`,
-      summary: `TBA`,
-    },
-    description: `Information on HER2 cancer. Causes, traditional treatments, and alternative treatments.`,
-    siteUrl: `https://www.fredjones.dev/`,
+    // edit below
+    title: `Gatsby Starter Personal Blog`,
+    author: `Gatsby`,
+    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
+    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `TBAnone`,
+      twitter: `gatsbyjs`,
     },
   },
-
   plugins: [
     `gatsby-plugin-netlify-cms`,
     {
@@ -147,7 +144,7 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-feed`,
+
     {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
