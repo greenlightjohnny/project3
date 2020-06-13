@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   repo: greenlightjohnny/project3
 
-media_folder: static/assets
-public_folder: assets
+media_folder: content/assets
+public_folder: ../assets
 
 collections:
   - label: "Main Page"
