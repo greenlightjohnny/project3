@@ -1,6 +1,6 @@
 ---
 title: Alternative Treatments
-intro: OLIVE LEAF EXTRACT (Oleuropein)
+intro: Oleuropein (an olive leaf compound)
 date: 2020-05-01T20:42:00.000Z
 ---
 **OLIVE LEAF COMPOUNDS**  
