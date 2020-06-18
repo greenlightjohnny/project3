@@ -134,8 +134,11 @@ const Navbar = ({ props }) => {
                   Alternative
                 </Link>
                 <div className={Styles.drop}>
-                  <Link activeClassName={Styles.active} to="/nope">
-                    Clinical Trials
+                  <Link
+                    activeClassName={Styles.active}
+                    to="/alternative/oliveleaf"
+                  >
+                    Olive Leaf
                   </Link>
                   <Link activeClassName={Styles.active} to="/nope">
                     Fake Treatments

@@ -103,8 +103,8 @@ collections:
     name: "Alternative Page"
 
     files:
-      - label: "Section One"
-        name: "Section One"
+      - label: "Olive Leaf"
+        name: "Olive"
         file: "content/pages/alternative/alternative1.md"
         fields:
           - { label: Title, name: title, widget: string }
@@ -112,8 +112,8 @@ collections:
           - { label: Body, name: body, widget: markdown }
           - { label: Date, name: date, widget: datetime }
 
-      - label: "Section Two"
-        name: "Section Two"
+      - label: "Section Intro"
+        name: "Intro"
         file: "content/pages/alternative/alternative2.md"
         fields:
           - { label: Title, name: title, widget: string }
@@ -133,15 +133,6 @@ collections:
       - label: "Section Four"
         name: "Section Four"
         file: "content/pages/alternative/alternative4.md"
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: string }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Date, name: date, widget: datetime }
-
-      - label: "Olive"
-        name: "Olive Leaf"
-        file: "content/pages/alternative/alternative5.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: string }

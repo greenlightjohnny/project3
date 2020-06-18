@@ -8,7 +8,7 @@ const Olive = ({ data }) => {
   const mydata = data.allMarkdownRemark.edges
   return (
     <Layout>
-      <SEO title="Basic Information" />
+      <SEO title="Olive Leafe" />
       <div className={`${Styles.mcon} ${Styles.mcontop}`}>
         <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: mydata[0].node.html }}></div>
