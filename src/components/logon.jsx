@@ -36,6 +36,8 @@ const Logon = ({ children }) => {
             background: `#ffffff`,
             border: `none`,
             fontWeight: `bold`,
+            marginLeft: `9px`,
+            marginRight: `9px`,
           }}
           className="btn"
           onClick={() => setDialog(true)}

@@ -149,14 +149,14 @@ class Layout extends React.Component {
                 className={Sect.link1}
                 to="/Latest"
               >
-                Latest
+                Blog
               </Link>
             </div>
             <div>
               <Link
                 activeClassName={Sect.active}
                 className={Sect.link1}
-                to="/About"
+                to="/blog"
               >
                 About
               </Link>

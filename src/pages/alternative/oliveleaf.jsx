@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout2"
-import Styles from "./test.module.scss"
-import SEO from "../components/seo"
+import Layout from "../../components/layout2"
+import Styles from "../test.module.scss"
+import SEO from "../../components/seo"
 
-const Basics = ({ data }) => {
+const Olive = ({ data }) => {
   const mydata = data.allMarkdownRemark.edges
   return (
     <Layout>
@@ -13,10 +13,6 @@ const Basics = ({ data }) => {
         <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: mydata[0].node.html }}></div>
       </div>
-      <div className={Styles.mcon}>
-        <h1>{data.allMarkdownRemark.edges[1].node.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: mydata[1].node.html }}></div>
-      </div>
     </Layout>
   )
 }
@@ -24,7 +20,7 @@ const Basics = ({ data }) => {
 export const query = graphql`
   {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/basics/" } }
+      filter: { fileAbsolutePath: { regex: "/alternative/" } }
       sort: { order: ASC, fields: frontmatter___date }
     ) {
       edges {
@@ -39,4 +35,4 @@ export const query = graphql`
   }
 `
 
-export default Basics
+export default Olive

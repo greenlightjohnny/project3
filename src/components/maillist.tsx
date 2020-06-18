@@ -15,6 +15,8 @@ const EmailListForm: React.FunctionComponent<{}> = () => {
         // Errors in here are client side
         // Mailchimp always returns a 200
       })
+
+    setEmail("")
   }
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
